@@ -2,7 +2,7 @@
 
 /**
  * @package Hide Default Taxonomies
- * @version 0.1
+ * @version 0.2
  */
 
 /*
@@ -11,7 +11,7 @@
  * Description: (Visually) removes most category and tag functionality from WordPress admin
  * Author: Barry Ceelen
  * Author URI: http://github.com/barryceelen/
- * Version: 0.1
+ * Version: 0.2
  * License: GPL2+
  */
 
@@ -38,7 +38,7 @@ class HideDefaultTaxonomies {
 		add_action( 'add_meta_boxes', array( $this, 'remove_post_meta_boxes' ) );
 		add_action( 'widgets_init', array( $this, 'unregister_widgets' ) );
 		add_action( 'admin_head-nav-menus.php', array( $this, 'remove_nav_menu_meta_boxes' ) );
-		add_filter( 'manage_posts_columns', array( $this, 'manage_post_columns' ) );
+		add_filter( 'manage_post_posts_columns', array( $this, 'manage_post_posts_columns' ) );
 	}
 
 	/**
@@ -91,14 +91,12 @@ class HideDefaultTaxonomies {
 	 * Unset category and tag columns on edit.php
 	 */
 
-	public function manage_post_columns( $columns ) {
+	public function manage_post_posts_columns( $columns ) {
 		if ( array_key_exists( 'categories', $columns ) )
 			unset( $columns['categories'] );
 		if ( array_key_exists( 'tags', $columns ) )
-			unset( $columns['categories'] );
+			unset( $columns['tags'] );
 		return $columns;
 	}
 
 }
-
-
