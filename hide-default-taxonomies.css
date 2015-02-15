@@ -1,26 +1,24 @@
-/*
- * Hide 'QuickPress' dashboard widget tags input
+/**
+ * Hide 'QuickPress' dashboard widget tags input.
  */
 .index-php #tags-input-wrap {
 	display: none;
 }
 
-/*
- * Hide 'Right Now' dashboard widget categories and tags display
- * TODO Better remove via jQuery as their positions might change?
+/**
+ * Hide 'Right Now' dashboard widget categories and tags display.
+ * Todo: Better remove via jQuery as their positions might change?
  */
-
 #dashboard_right_now table tr:nth-of-type(3),
 #dashboard_right_now table tr:nth-of-type(4) {
 	display: none;
 }
 
 /**
- * Hide Quick Edit stuff
- * Uglifies display of the status select, but there you go
- * TODO Filter available?
+ * Hide Quick Edit stuff.
+ * Uglifies display of the status select, but there you go.
+ * Todo: Filter available?
  */
-
 #the-list .inline-edit-categories,
 #the-list .inline-edit-col-right .inline-edit-tags {
 	display: none;
