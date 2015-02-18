@@ -81,7 +81,7 @@ class Hide_Default_Taxonomies {
 	 *
 	 * @since 0.1.0
 	 */
-	public function remove_post_nav_menu_meta_boxes() {
+	public function remove_nav_menu_meta_boxes() {
 		remove_meta_box('add-category', 'nav-menus', 'side');
 		remove_meta_box('add-post_tag', 'nav-menus', 'side');
 	}
