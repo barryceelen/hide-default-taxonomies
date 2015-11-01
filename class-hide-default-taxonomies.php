@@ -7,7 +7,7 @@
 /**
  * Main plugin class.
  *
- * @package Events_Toolkit
+ * @package Hide Default Taxonomies
  * @author  Barry Ceelen <b@rryceelen.com>
  */
 class Hide_Default_Taxonomies {

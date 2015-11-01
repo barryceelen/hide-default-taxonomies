@@ -8,7 +8,7 @@
 /**
  * Plugin Name: Hide Default Taxonomies
  * Plugin URI: http://github.com/barryceelen/hide-default-taxonomies
- * Description: (Visually) removes most category and tag functionality from the WordPress admin
+ * Description: (Visually) removes most category and tag functionality from the WordPress admin.
  * Author: Barry Ceelen
  * Author URI: http://github.com/barryceelen/
  * Version: 0.3.0
